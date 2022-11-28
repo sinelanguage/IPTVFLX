@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */; };
+		E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C2029344C1400AFC746 /* ContentView.swift */; };
+		E8E35C2329344C1600AFC746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E35C2229344C1600AFC746 /* Assets.xcassets */; };
+		E8E35C2629344C1600AFC746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E35C2529344C1600AFC746 /* Preview Assets.xcassets */; };
+		E8E35C2829344C1600AFC746 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C2729344C1600AFC746 /* Persistence.swift */; };
+		E8E35C2B29344C1600AFC746 /* IPTVFLX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C2929344C1600AFC746 /* IPTVFLX.xcdatamodeld */; };
+		E8E35C3529344C1600AFC746 /* IPTVFLXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C3429344C1600AFC746 /* IPTVFLXTests.swift */; };
+		E8E35C3F29344C1600AFC746 /* IPTVFLXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C3E29344C1600AFC746 /* IPTVFLXUITests.swift */; };
+		E8E35C4129344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C4029344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8E35C3129344C1600AFC746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E35C1329344C1400AFC746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E35C1A29344C1400AFC746;
+			remoteInfo = IPTVFLX;
+		};
+		E8E35C3B29344C1600AFC746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E35C1329344C1400AFC746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E35C1A29344C1400AFC746;
+			remoteInfo = IPTVFLX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8E35C1B29344C1400AFC746 /* IPTVFLX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTVFLX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXApp.swift; sourceTree = "<group>"; };
+		E8E35C2029344C1400AFC746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8E35C2229344C1600AFC746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E35C2529344C1600AFC746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8E35C2729344C1600AFC746 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E8E35C2A29344C1600AFC746 /* IPTVFLX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IPTVFLX.xcdatamodel; sourceTree = "<group>"; };
+		E8E35C3029344C1600AFC746 /* IPTVFLXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPTVFLXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E35C3429344C1600AFC746 /* IPTVFLXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXTests.swift; sourceTree = "<group>"; };
+		E8E35C3A29344C1600AFC746 /* IPTVFLXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPTVFLXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E35C3E29344C1600AFC746 /* IPTVFLXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXUITests.swift; sourceTree = "<group>"; };
+		E8E35C4029344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8E35C1829344C1400AFC746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C2D29344C1600AFC746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C3729344C1600AFC746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8E35C1229344C1400AFC746 = {
+			isa = PBXGroup;
+			children = (
+				E8E35C1D29344C1400AFC746 /* IPTVFLX */,
+				E8E35C3329344C1600AFC746 /* IPTVFLXTests */,
+				E8E35C3D29344C1600AFC746 /* IPTVFLXUITests */,
+				E8E35C1C29344C1400AFC746 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E35C1C29344C1400AFC746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E35C1B29344C1400AFC746 /* IPTVFLX.app */,
+				E8E35C3029344C1600AFC746 /* IPTVFLXTests.xctest */,
+				E8E35C3A29344C1600AFC746 /* IPTVFLXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E35C1D29344C1400AFC746 /* IPTVFLX */ = {
+			isa = PBXGroup;
+			children = (
+				E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */,
+				E8E35C2029344C1400AFC746 /* ContentView.swift */,
+				E8E35C2229344C1600AFC746 /* Assets.xcassets */,
+				E8E35C2729344C1600AFC746 /* Persistence.swift */,
+				E8E35C2929344C1600AFC746 /* IPTVFLX.xcdatamodeld */,
+				E8E35C2429344C1600AFC746 /* Preview Content */,
+			);
+			path = IPTVFLX;
+			sourceTree = "<group>";
+		};
+		E8E35C2429344C1600AFC746 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8E35C2529344C1600AFC746 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8E35C3329344C1600AFC746 /* IPTVFLXTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8E35C3429344C1600AFC746 /* IPTVFLXTests.swift */,
+			);
+			path = IPTVFLXTests;
+			sourceTree = "<group>";
+		};
+		E8E35C3D29344C1600AFC746 /* IPTVFLXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8E35C3E29344C1600AFC746 /* IPTVFLXUITests.swift */,
+				E8E35C4029344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift */,
+			);
+			path = IPTVFLXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E35C1A29344C1400AFC746 /* IPTVFLX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E35C4429344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLX" */;
+			buildPhases = (
+				E8E35C1729344C1400AFC746 /* Sources */,
+				E8E35C1829344C1400AFC746 /* Frameworks */,
+				E8E35C1929344C1400AFC746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPTVFLX;
+			productName = IPTVFLX;
+			productReference = E8E35C1B29344C1400AFC746 /* IPTVFLX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8E35C2F29344C1600AFC746 /* IPTVFLXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E35C4729344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLXTests" */;
+			buildPhases = (
+				E8E35C2C29344C1600AFC746 /* Sources */,
+				E8E35C2D29344C1600AFC746 /* Frameworks */,
+				E8E35C2E29344C1600AFC746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E35C3229344C1600AFC746 /* PBXTargetDependency */,
+			);
+			name = IPTVFLXTests;
+			productName = IPTVFLXTests;
+			productReference = E8E35C3029344C1600AFC746 /* IPTVFLXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8E35C3929344C1600AFC746 /* IPTVFLXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E35C4A29344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLXUITests" */;
+			buildPhases = (
+				E8E35C3629344C1600AFC746 /* Sources */,
+				E8E35C3729344C1600AFC746 /* Frameworks */,
+				E8E35C3829344C1600AFC746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E35C3C29344C1600AFC746 /* PBXTargetDependency */,
+			);
+			name = IPTVFLXUITests;
+			productName = IPTVFLXUITests;
+			productReference = E8E35C3A29344C1600AFC746 /* IPTVFLXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E35C1329344C1400AFC746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E8E35C1A29344C1400AFC746 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E8E35C2F29344C1600AFC746 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8E35C1A29344C1400AFC746;
+					};
+					E8E35C3929344C1600AFC746 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8E35C1A29344C1400AFC746;
+					};
+				};
+			};
+			buildConfigurationList = E8E35C1629344C1400AFC746 /* Build configuration list for PBXProject "IPTVFLX" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E35C1229344C1400AFC746;
+			productRefGroup = E8E35C1C29344C1400AFC746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E35C1A29344C1400AFC746 /* IPTVFLX */,
+				E8E35C2F29344C1600AFC746 /* IPTVFLXTests */,
+				E8E35C3929344C1600AFC746 /* IPTVFLXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E35C1929344C1400AFC746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E35C2629344C1600AFC746 /* Preview Assets.xcassets in Resources */,
+				E8E35C2329344C1600AFC746 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C2E29344C1600AFC746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C3829344C1600AFC746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E35C1729344C1400AFC746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E35C2829344C1600AFC746 /* Persistence.swift in Sources */,
+				E8E35C2B29344C1600AFC746 /* IPTVFLX.xcdatamodeld in Sources */,
+				E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */,
+				E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C2C29344C1600AFC746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E35C3529344C1600AFC746 /* IPTVFLXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E35C3629344C1600AFC746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E35C4129344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift in Sources */,
+				E8E35C3F29344C1600AFC746 /* IPTVFLXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8E35C3229344C1600AFC746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E35C1A29344C1400AFC746 /* IPTVFLX */;
+			targetProxy = E8E35C3129344C1600AFC746 /* PBXContainerItemProxy */;
+		};
+		E8E35C3C29344C1600AFC746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E35C1A29344C1400AFC746 /* IPTVFLX */;
+			targetProxy = E8E35C3B29344C1600AFC746 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8E35C4229344C1600AFC746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		E8E35C4329344C1600AFC746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E35C4529344C1600AFC746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPTVFLX/Preview Content\"";
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		E8E35C4629344C1600AFC746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IPTVFLX/Preview Content\"";
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		E8E35C4829344C1600AFC746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTVFLX.app/IPTVFLX";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		E8E35C4929344C1600AFC746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTVFLX.app/IPTVFLX";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Release;
+		};
+		E8E35C4B29344C1600AFC746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = IPTVFLX;
+			};
+			name = Debug;
+		};
+		E8E35C4C29344C1600AFC746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G4BQ4PE2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.IPTVFLXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = IPTVFLX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E35C1629344C1400AFC746 /* Build configuration list for PBXProject "IPTVFLX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E35C4229344C1600AFC746 /* Debug */,
+				E8E35C4329344C1600AFC746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E35C4429344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E35C4529344C1600AFC746 /* Debug */,
+				E8E35C4629344C1600AFC746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E35C4729344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E35C4829344C1600AFC746 /* Debug */,
+				E8E35C4929344C1600AFC746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E35C4A29344C1600AFC746 /* Build configuration list for PBXNativeTarget "IPTVFLXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E35C4B29344C1600AFC746 /* Debug */,
+				E8E35C4C29344C1600AFC746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8E35C2929344C1600AFC746 /* IPTVFLX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8E35C2A29344C1600AFC746 /* IPTVFLX.xcdatamodel */,
+			);
+			currentVersion = E8E35C2A29344C1600AFC746 /* IPTVFLX.xcdatamodel */;
+			path = IPTVFLX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E8E35C1329344C1400AFC746 /* Project object */;
+}
