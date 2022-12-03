@@ -11,19 +11,12 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    var tempTxt = "FUCKING FINALLY GOT A VIEW TO RENDER ON THIS FUCKING TV FOR FUCK SAKES";
+    let tempTxt = "FINALLY GOT A VIEW TO RENDER ON THIS FUCKING TV FOR FUCK SAKES";
     
     var body: some View {
         Text(tempTxt)
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
