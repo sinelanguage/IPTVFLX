@@ -10,11 +10,19 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    let val: Int = 47
 
-    let tempTxt = "FINALLY GOT A VIEW TO RENDER ON THIS FUCKING TV FOR FUCK SAKES";
+    let tempTxt: String =
+        """
+        FINALLY GOT
+        A VIEW TO RENDER ON THIS
+        FUCKING TV
+        FOR FUCK SAKES
+        at age
+        """;
     
     var body: some View {
-        Text(tempTxt)
+        Text(tempTxt + " \(val)")
     }
 }
 
