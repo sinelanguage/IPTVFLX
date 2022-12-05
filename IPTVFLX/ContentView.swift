@@ -21,8 +21,35 @@ struct ContentView: View {
         at age
         """;
     
+    let failure = "failure"
+    let success = "success"
+    
+    // Enums
+    enum AEnum {
+        case failure
+        case success
+    }
+    
+    /*
+     enums can also store associated values attached to
+     each case. This lets you attach additional
+     information to your enums so they can represent more
+     nuanced data.
+     */
+    
+    enum AssociatedEnumExample {
+        case bored
+        case running(typeOfRunning: String)
+        case gymrat(typeOfExercise: String)
+    }
+    
+    // Now you can be specific when accessing Enum properites
+    let WeightLifting = AssociatedEnumExample.gymrat(typeOfExercise: "Bench Press")
+    
     var body: some View {
-        Text(tempTxt + " \(val)")
+        Text(tempTxt + " \(val) \(AEnum.success)")
+            .font(.title)
+            .foregroundColor(Color.gray)
     }
 }
 
