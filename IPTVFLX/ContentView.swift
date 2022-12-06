@@ -30,6 +30,11 @@ struct ContentView: View {
         "wife": "Sylvia Oliveira"
     ]
     
+    // Initial empty collections (complex types)
+    let emptyArr = [String]()
+    let emptyDict = [String: Int]()
+    let emptySet = Set<String>()
+    
     // Only give dictionaries default values, if they are being evaluated, not
     // Just for the fuck of it in a single LOC.
         """;
