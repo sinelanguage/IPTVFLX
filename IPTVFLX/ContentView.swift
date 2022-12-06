@@ -35,10 +35,6 @@ struct ContentView: View {
     let emptyDict = [String: Int]()
     let emptySet = Set<String>()
     
-    // Only give dictionaries default values, if they are being evaluated, not
-    // Just for the fuck of it in a single LOC.
-        """;
-    
     let failure = "failure"
     let success = "success"
     
@@ -49,7 +45,7 @@ struct ContentView: View {
     }
     
     /*
-     enums can also store associated values attached to
+     Enums can also store associated values attached to
      each case. This lets you attach additional
      information to your enums so they can represent more
      nuanced data.
@@ -64,6 +60,9 @@ struct ContentView: View {
     // Now you can be specific when accessing Enum properites
     let WeightLifting = AssociatedEnumExample.gymrat(typeOfExercise: "Bench Press")
     
+    
+    // Only give dictionaries default values, if they are being evaluated, not
+    // Just for the fuck of it in a single LOC.
     var body: some View {
         Text(tempTxt + " \(val) \(arr[0]) \(arr[1]) \(aDict["wife", default: "YO"])")
     }
