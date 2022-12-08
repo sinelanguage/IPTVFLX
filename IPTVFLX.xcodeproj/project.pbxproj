@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E856532529417C7500814948 /* TestStringModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E856532429417C7500814948 /* TestStringModule.swift */; };
+		E85653272941851500814948 /* SwiftLearnModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85653262941851500814948 /* SwiftLearnModule.swift */; };
 		E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */; };
 		E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C2029344C1400AFC746 /* ContentView.swift */; };
 		E8E35C2329344C1600AFC746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E35C2229344C1600AFC746 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E856532429417C7500814948 /* TestStringModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringModule.swift; sourceTree = "<group>"; };
+		E85653262941851500814948 /* SwiftLearnModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnModule.swift; sourceTree = "<group>"; };
 		E8E35C1B29344C1400AFC746 /* IPTVFLX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTVFLX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXApp.swift; sourceTree = "<group>"; };
 		E8E35C2029344C1400AFC746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,8 +102,10 @@
 		E8E35C1D29344C1400AFC746 /* IPTVFLX */ = {
 			isa = PBXGroup;
 			children = (
+				E856532429417C7500814948 /* TestStringModule.swift */,
 				E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */,
 				E8E35C2029344C1400AFC746 /* ContentView.swift */,
+				E85653262941851500814948 /* SwiftLearnModule.swift */,
 				E8E35C2229344C1600AFC746 /* Assets.xcassets */,
 				E8E35C2729344C1600AFC746 /* Persistence.swift */,
 				E8E35C2929344C1600AFC746 /* IPTVFLX.xcdatamodeld */,
@@ -263,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E856532529417C7500814948 /* TestStringModule.swift in Sources */,
 				E8E35C2829344C1600AFC746 /* Persistence.swift in Sources */,
 				E8E35C2B29344C1600AFC746 /* IPTVFLX.xcdatamodeld in Sources */,
 				E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */,
+				E85653272941851500814948 /* SwiftLearnModule.swift in Sources */,
 				E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
