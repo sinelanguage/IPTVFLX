@@ -79,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E85653282942BE5B00814948 /* _temp */ = {
+			isa = PBXGroup;
+			children = (
+				E85653292942C33C00814948 /* SwiftLearning */,
+			);
+			path = _temp;
+			sourceTree = "<group>";
+		};
+		E85653292942C33C00814948 /* SwiftLearning */ = {
+			isa = PBXGroup;
+			children = (
+				E856532429417C7500814948 /* TestStringModule.swift */,
+				E8E35C2029344C1400AFC746 /* ContentView.swift */,
+				E85653262941851500814948 /* SwiftLearnModule.swift */,
+			);
+			path = SwiftLearning;
+			sourceTree = "<group>";
+		};
 		E8E35C1229344C1400AFC746 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +120,8 @@
 		E8E35C1D29344C1400AFC746 /* IPTVFLX */ = {
 			isa = PBXGroup;
 			children = (
-				E856532429417C7500814948 /* TestStringModule.swift */,
+				E85653282942BE5B00814948 /* _temp */,
 				E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */,
-				E8E35C2029344C1400AFC746 /* ContentView.swift */,
-				E85653262941851500814948 /* SwiftLearnModule.swift */,
 				E8E35C2229344C1600AFC746 /* Assets.xcassets */,
 				E8E35C2729344C1600AFC746 /* Persistence.swift */,
 				E8E35C2929344C1600AFC746 /* IPTVFLX.xcdatamodeld */,
