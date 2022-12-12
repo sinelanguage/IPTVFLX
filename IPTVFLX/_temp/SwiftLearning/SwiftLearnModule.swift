@@ -59,6 +59,42 @@ enum AssociatedEnumExample {
 // Now you can be specific when accessing Enum properites
 let WeightLifting = AssociatedEnumExample.gymrat(typeOfExercise: "Bench Press")
 
+// Loops
+
+func loops() -> String {
+    let num = 1...5
+    var digit: Int = 0
+    var str: String =
+    """
+    """
+
+    for i in num {
+        digit = i
+        str +=
+        """
+        val \(i) \(digit).
+        """
+        
+        repeat {
+            str +=
+            """
+            digit \(digit), 
+            """
+            if (digit == 4) {
+                str +=
+                """
+                will break here,
+                """
+                break
+            }
+            digit += 1
+        } while digit < 5
+    }
+    
+
+    
+    return str
+}
 
 // Functions
 func printString(str: String) -> String {
@@ -74,12 +110,25 @@ func returnTupleB(_ noVarName: String, withVarName: String) -> String {
     return (noVarName + " " + withVarName)
 }
 
+func useRange(num: Int) -> String {
+    switch num {
+    case 0...50:
+        return "low range"
+    case 51...100:
+        return "hi range"
+    default:
+        return "out of range"
+    }
+}
+
 // Desctructure the return value of the above function
 // You can skip values too
 
 let (first, _) = returnTuple()
 let (_, second) = returnTuple()
 let noNamedParam = returnTupleB("No String", withVarName: "Param")
+let isNumInRange: String = useRange(num: 120)
+let loopedResults: String = loops()
 
 // Only give dictionaries default values, if they are being evaluated, not
 // Just for the fuck of it in a single LOC.
@@ -87,7 +136,8 @@ let TVText = Text(
     tempTxt +
         """
         \(val) \(arr[0]) \(arr[1]) \(aDict["wife", default: "YO"])
-        \(AEnum.success) \(printString(str: "SHMEE"))
+        \(AEnum.success) \(printString(str: "SHMEE")) \(isNumInRange)
         \(first) \(second) \(noNamedParam) \(ExportedString)
+        \(loopedResults)
         """
     )
