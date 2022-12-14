@@ -37,8 +37,15 @@ let emptySet = Set<String>()
 enum AEnum {
     // WTF Enums default to strings?
     // Nope, according to docs, values are hashable by default
+    // which is why its not saying "failure" or "success" are undefined
     case failure
     case success
+}
+
+// Error is built in type
+enum DemoError: Error {
+    case passwordIncorrect
+    case usernameIncorrect
 }
 
 /*
@@ -78,7 +85,7 @@ func loops() -> String {
         repeat {
             str +=
             """
-            digit \(digit), 
+            digit \(digit),
             """
             if (digit == 4) {
                 str +=
@@ -110,6 +117,34 @@ func returnTupleB(_ noVarName: String, withVarName: String) -> String {
     return (noVarName + " " + withVarName)
 }
 
+// Swift lets you provide labels for variable names like using Objects as args in JS functions
+
+func namedLabels(num: Int, str: String) -> (Int, String) {
+    return (num: num, str: str)
+}
+
+// func arg has two names, 1 for caller to pass in param and 1 for func body
+
+func doubleNamedLabels(str name: String) -> String {
+    return name // using name in the body but str in the call down below
+}
+
+func omitNamedLabels(_ name: String) -> String {
+    return name // notice at the call sight, that "name" is not labelled in func args
+}
+
+func defaultParamVals(name: String = "Adam") -> String {
+    return name
+}
+
+func variodicFuncParams(nums: Int...) -> Int {
+    var total = 0
+    for num in nums {
+        total += num
+    }
+    return total
+}
+
 func useRange(num: Int) -> String {
     switch num {
     case 0...50:
@@ -121,6 +156,8 @@ func useRange(num: Int) -> String {
     }
 }
 
+
+
 // Desctructure the return value of the above function
 // You can skip values too
 
@@ -129,6 +166,10 @@ let (_, second) = returnTuple()
 let noNamedParam = returnTupleB("No String", withVarName: "Param")
 let isNumInRange: String = useRange(num: 120)
 let loopedResults: String = loops()
+let useNamedLabels: (Int, String) = namedLabels(num: 10, str: "Ten")
+let useOmitNamedLabels: String = omitNamedLabels("Label is omitted")
+let useDefaultParamVals: String = defaultParamVals()
+let variodicFuncResult: Int = variodicFuncParams(nums: 3,6,9,12)
 
 // Only give dictionaries default values, if they are being evaluated, not
 // Just for the fuck of it in a single LOC.
@@ -138,6 +179,10 @@ let TVText = Text(
         \(val) \(arr[0]) \(arr[1]) \(aDict["wife", default: "YO"])
         \(AEnum.success) \(printString(str: "SHMEE")) \(isNumInRange)
         \(first) \(second) \(noNamedParam) \(ExportedString)
-        \(loopedResults)
+        \(loopedResults) \(useNamedLabels)
+        \(doubleNamedLabels(str: "Double Named Arg"))
+        \(useOmitNamedLabels)
+        \(useDefaultParamVals)
+        \(variodicFuncResult)
         """
     )
