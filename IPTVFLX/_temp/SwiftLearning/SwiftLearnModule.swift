@@ -103,6 +103,18 @@ func loops() -> String {
     return str
 }
 
+
+func useRange(num: Int) -> String {
+    switch num {
+    case 0...50:
+        return "low range"
+    case 51...100:
+        return "hi range"
+    default:
+        return "out of range"
+    }
+}
+
 // Functions
 func printString(str: String) -> String {
     return str
@@ -145,18 +157,28 @@ func variodicFuncParams(nums: Int...) -> Int {
     return total
 }
 
-func useRange(num: Int) -> String {
-    switch num {
-    case 0...50:
-        return "low range"
-    case 51...100:
-        return "hi range"
-    default:
-        return "out of range"
+// Errors = enum of error types + throw fn
+enum UsernameError: Error {
+    case alreadyUsed
+    case notEnoughChar
+}
+
+func checkUsername(username: String) throws -> Void {
+    if username.count < 10 {
+        throw UsernameError.notEnoughChar
     }
 }
 
-
+func handleUsername(username: String) -> String {
+    if username.count > 0 {
+        do {
+            try checkUsername(username: username)
+        } catch {
+            return "Error found \(username.count)"
+        }
+    }
+    return "Username is valid \(username.count)"
+}
 
 // Desctructure the return value of the above function
 // You can skip values too
@@ -170,6 +192,9 @@ let useNamedLabels: (Int, String) = namedLabels(num: 10, str: "Ten")
 let useOmitNamedLabels: String = omitNamedLabels("Label is omitted")
 let useDefaultParamVals: String = defaultParamVals()
 let variodicFuncResult: Int = variodicFuncParams(nums: 3,6,9,12)
+let username: String = handleUsername(username: "Shit")
+
+
 
 // Only give dictionaries default values, if they are being evaluated, not
 // Just for the fuck of it in a single LOC.
@@ -184,5 +209,6 @@ let TVText = Text(
         \(useOmitNamedLabels)
         \(useDefaultParamVals)
         \(variodicFuncResult)
+        \(username)
         """
     )

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E856532529417C7500814948 /* TestStringModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E856532429417C7500814948 /* TestStringModule.swift */; };
 		E85653272941851500814948 /* SwiftLearnModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85653262941851500814948 /* SwiftLearnModule.swift */; };
+		E8DCBA8E294ECA3F000918C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCBA8D294ECA3F000918C8 /* Errors.swift */; };
+		E8DCBA8F294ECA3F000918C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCBA8D294ECA3F000918C8 /* Errors.swift */; };
+		E8DCBA90294ECA3F000918C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCBA8D294ECA3F000918C8 /* Errors.swift */; };
 		E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */; };
 		E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E35C2029344C1400AFC746 /* ContentView.swift */; };
 		E8E35C2329344C1600AFC746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E35C2229344C1600AFC746 /* Assets.xcassets */; };
@@ -40,6 +43,7 @@
 /* Begin PBXFileReference section */
 		E856532429417C7500814948 /* TestStringModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringModule.swift; sourceTree = "<group>"; };
 		E85653262941851500814948 /* SwiftLearnModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnModule.swift; sourceTree = "<group>"; };
+		E8DCBA8D294ECA3F000918C8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E8E35C1B29344C1400AFC746 /* IPTVFLX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTVFLX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXApp.swift; sourceTree = "<group>"; };
 		E8E35C2029344C1400AFC746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 			path = SwiftLearning;
 			sourceTree = "<group>";
 		};
+		E8DCBA8C294EC9ED000918C8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E8DCBA8D294ECA3F000918C8 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		E8E35C1229344C1400AFC746 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		E8E35C1D29344C1400AFC746 /* IPTVFLX */ = {
 			isa = PBXGroup;
 			children = (
+				E8DCBA8C294EC9ED000918C8 /* Errors */,
 				E85653282942BE5B00814948 /* _temp */,
 				E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */,
 				E8E35C2229344C1600AFC746 /* Assets.xcassets */,
@@ -291,6 +304,7 @@
 				E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */,
 				E85653272941851500814948 /* SwiftLearnModule.swift in Sources */,
 				E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */,
+				E8DCBA8E294ECA3F000918C8 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DCBA8F294ECA3F000918C8 /* Errors.swift in Sources */,
 				E8E35C3529344C1600AFC746 /* IPTVFLXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E35C4129344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift in Sources */,
+				E8DCBA90294ECA3F000918C8 /* Errors.swift in Sources */,
 				E8E35C3F29344C1600AFC746 /* IPTVFLXUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
