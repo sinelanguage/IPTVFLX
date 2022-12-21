@@ -150,6 +150,7 @@ func defaultParamVals(name: String = "Adam") -> String {
 }
 
 func variodicFuncParams(nums: Int...) -> Int {
+    doubleForEveryone(num: &myNum)
     var total = 0
     for num in nums {
         total += num
@@ -178,6 +179,15 @@ func handleUsername(username: String) -> String {
         }
     }
     return "Username is valid \(username.count)"
+}
+
+// inout allows you to modify the value of parameters from inside a closure, to its value outside,
+// preface "inout" before the <type>
+// preface the parameter value with "&"<varName>  so:  funcName(number: &nyNum)
+var myNum = 15
+
+func doubleForEveryone(num: inout Int) -> Void {
+    num *= 4
 }
 
 // Desctructure the return value of the above function
@@ -209,6 +219,8 @@ let TVText = Text(
         \(useOmitNamedLabels)
         \(useDefaultParamVals)
         \(variodicFuncResult)
-        \(username)
+        \(username) \(myNum)
+        \(String(describing: closureScopeD))
+        \(closureScopeE)
         """
     )
