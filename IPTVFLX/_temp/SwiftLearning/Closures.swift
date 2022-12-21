@@ -116,3 +116,19 @@ func returnClosureFromFunc() -> (String) -> (String) {
 }
 
 let closureScopeE = returnClosureFromFunc()("Returned from closure from fn")
+
+// Capturing values in a fn, from a closure and reusing them
+
+func storeValFromClosure() -> (String) -> (String) {
+    var str = "a, "
+    return {
+        let desc = "I'm stored \(str) and \($0)"
+        str += "b, "
+        return desc
+    }
+}
+
+let res2 = storeValFromClosure()
+
+let closureScopeF = res2("c, ")
+let closureScopeG = res2("d, ")

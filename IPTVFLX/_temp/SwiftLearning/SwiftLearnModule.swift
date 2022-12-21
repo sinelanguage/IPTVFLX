@@ -222,5 +222,6 @@ let TVText = Text(
         \(username) \(myNum)
         \(String(describing: closureScopeD))
         \(closureScopeE)
+        \(closureScopeF) \(closureScopeG)
         """
     )
