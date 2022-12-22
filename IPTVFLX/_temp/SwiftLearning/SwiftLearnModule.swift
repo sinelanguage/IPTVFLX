@@ -203,8 +203,7 @@ let useOmitNamedLabels: String = omitNamedLabels("Label is omitted")
 let useDefaultParamVals: String = defaultParamVals()
 let variodicFuncResult: Int = variodicFuncParams(nums: 3,6,9,12)
 let username: String = handleUsername(username: "Shit")
-
-
+var dm = DepecheMode();
 
 // Only give dictionaries default values, if they are being evaluated, not
 // Just for the fuck of it in a single LOC.
@@ -223,5 +222,7 @@ let TVText = Text(
         \(String(describing: closureScopeD))
         \(closureScopeE)
         \(closureScopeF) \(closureScopeG)
+        \(adam.name)
+        \(dm.addVince())\(dm.members)
         """
     )
