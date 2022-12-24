@@ -165,3 +165,27 @@ struct Employee {
 func getEmployee() -> Void {
     let _ = Employee.example
 }
+
+struct Car {
+    private let model: String
+    private let numberOfSeats: Int
+    var gear: Int = 0
+    
+    init(model: String, numberOfSeats: Int){
+        self.model = model
+        self.numberOfSeats = numberOfSeats
+    }
+    
+    mutating func shiftGears(nextGear: Int) -> Int {
+        if(gear != nextGear){
+           return nextGear
+        }
+        return gear
+    }
+}
+
+var TypeR = Car.init(model: "Type R", numberOfSeats: 4)
+
+func typeR() -> Void {
+    let _ = TypeR.shiftGears(nextGear: 3)
+}
