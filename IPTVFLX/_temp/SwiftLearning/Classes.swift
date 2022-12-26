@@ -71,12 +71,31 @@ let CivicSi = CarTwo(isElectric: false, isConvertable: false)
 // To deep copy a class, you have a write a method that does it internally
 // on the root class.  No idea
 
-class UserTwo {
+class UserTwoTwo {
     var username = "none"
     
-    func copy() -> UserTwo {
-        let user = UserTwo()
-        user.username = username
-        return user
+    init(){
+        print("I'm the parent class")
+    }
+    
+    func copy() {
+        print("i'm the original method")
+    }
+}
+
+class UserTwoOne: UserTwoTwo {
+    
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+        super.init()
+        print("I'm the child class")
+    }
+    
+    override func copy() {
+        print("i'm an overridden fn")
     }
 }
