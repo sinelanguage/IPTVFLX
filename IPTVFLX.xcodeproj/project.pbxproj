@@ -62,6 +62,7 @@
 		E8DCBA9D2956871B000918C8 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		E8DCBAA329579F67000918C8 /* Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Classes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E8DCBAA4295A5993000918C8 /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E8DCBAA5295BBB54000918C8 /* Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E8E35C1B29344C1400AFC746 /* IPTVFLX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTVFLX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTVFLXApp.swift; sourceTree = "<group>"; };
 		E8E35C2029344C1400AFC746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 			children = (
 				E8DCBAA329579F67000918C8 /* Classes.playground */,
 				E8DCBAA4295A5993000918C8 /* Protocols.playground */,
+				E8DCBAA5295BBB54000918C8 /* Extensions.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
