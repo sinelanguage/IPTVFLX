@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83429F1296905B10073A740 /* ProvidersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F0296905B10073A740 /* ProvidersController.swift */; };
+		E83429F2296905B10073A740 /* ProvidersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F0296905B10073A740 /* ProvidersController.swift */; };
+		E83429F3296905B10073A740 /* ProvidersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F0296905B10073A740 /* ProvidersController.swift */; };
+		E83429F5296908590073A740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F4296908590073A740 /* Constants.swift */; };
+		E83429F6296908590073A740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F4296908590073A740 /* Constants.swift */; };
+		E83429F7296908590073A740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429F4296908590073A740 /* Constants.swift */; };
+		E83429FC296A01F90073A740 /* ProvidersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429FB296A01F90073A740 /* ProvidersService.swift */; };
+		E83429FD296A01F90073A740 /* ProvidersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429FB296A01F90073A740 /* ProvidersService.swift */; };
+		E83429FE296A01F90073A740 /* ProvidersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83429FB296A01F90073A740 /* ProvidersService.swift */; };
+		E8342A01296A021D0073A740 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8342A00296A021D0073A740 /* Bootstrap.swift */; };
+		E8342A02296A021D0073A740 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8342A00296A021D0073A740 /* Bootstrap.swift */; };
+		E8342A03296A021D0073A740 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8342A00296A021D0073A740 /* Bootstrap.swift */; };
 		E856532529417C7500814948 /* TestStringModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E856532429417C7500814948 /* TestStringModule.swift */; };
 		E85653272941851500814948 /* SwiftLearnModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85653262941851500814948 /* SwiftLearnModule.swift */; };
 		E8DCBA8E294ECA3F000918C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCBA8D294ECA3F000918C8 /* Errors.swift */; };
@@ -53,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E83429F0296905B10073A740 /* ProvidersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersController.swift; sourceTree = "<group>"; };
+		E83429F4296908590073A740 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E83429FB296A01F90073A740 /* ProvidersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersService.swift; sourceTree = "<group>"; };
+		E8342A00296A021D0073A740 /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
 		E856532429417C7500814948 /* TestStringModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringModule.swift; sourceTree = "<group>"; };
 		E85653262941851500814948 /* SwiftLearnModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnModule.swift; sourceTree = "<group>"; };
 		E8DCBA8D294ECA3F000918C8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -104,6 +120,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E83429F8296A014E0073A740 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E8342A04296B57C50073A740 /* Provider */,
+				E83429FA296A01920073A740 /* Providers */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E83429F9296A016C0073A740 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E83429F4296908590073A740 /* Constants.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		E83429FA296A01920073A740 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				E83429F0296905B10073A740 /* ProvidersController.swift */,
+				E83429FB296A01F90073A740 /* ProvidersService.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		E83429FF296A02030073A740 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8342A00296A021D0073A740 /* Bootstrap.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E8342A04296B57C50073A740 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		E85653282942BE5B00814948 /* _temp */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +227,9 @@
 		E8E35C1D29344C1400AFC746 /* IPTVFLX */ = {
 			isa = PBXGroup;
 			children = (
+				E83429FF296A02030073A740 /* App */,
+				E83429F9296A016C0073A740 /* Fixtures */,
+				E83429F8296A014E0073A740 /* Entities */,
 				E8DCBA8C294EC9ED000918C8 /* Errors */,
 				E85653282942BE5B00814948 /* _temp */,
 				E8E35C1E29344C1400AFC746 /* IPTVFLXApp.swift */,
@@ -343,10 +403,14 @@
 				E8E35C2B29344C1600AFC746 /* IPTVFLX.xcdatamodeld in Sources */,
 				E8E35C2129344C1400AFC746 /* ContentView.swift in Sources */,
 				E85653272941851500814948 /* SwiftLearnModule.swift in Sources */,
+				E83429F5296908590073A740 /* Constants.swift in Sources */,
 				E8DCBA9E2956871B000918C8 /* Classes.swift in Sources */,
+				E83429F1296905B10073A740 /* ProvidersController.swift in Sources */,
 				E8E35C1F29344C1400AFC746 /* IPTVFLXApp.swift in Sources */,
 				E8DCBA8E294ECA3F000918C8 /* Errors.swift in Sources */,
+				E83429FC296A01F90073A740 /* ProvidersService.swift in Sources */,
 				E8DCBA9A2953E4B3000918C8 /* Collections.swift in Sources */,
+				E8342A01296A021D0073A740 /* Bootstrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,12 +418,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83429F2296905B10073A740 /* ProvidersController.swift in Sources */,
+				E83429FD296A01F90073A740 /* ProvidersService.swift in Sources */,
 				E8DCBA972953CE83000918C8 /* Structs.swift in Sources */,
 				E8DCBA8F294ECA3F000918C8 /* Errors.swift in Sources */,
+				E8342A02296A021D0073A740 /* Bootstrap.swift in Sources */,
 				E8DCBA9F2956871B000918C8 /* Classes.swift in Sources */,
 				E8E35C3529344C1600AFC746 /* IPTVFLXTests.swift in Sources */,
 				E8DCBA93294FD87A000918C8 /* Closures.swift in Sources */,
 				E8DCBA9B2953E4B3000918C8 /* Collections.swift in Sources */,
+				E83429F6296908590073A740 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,13 +435,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83429F3296905B10073A740 /* ProvidersController.swift in Sources */,
+				E8342A03296A021D0073A740 /* Bootstrap.swift in Sources */,
 				E8E35C4129344C1600AFC746 /* IPTVFLXUITestsLaunchTests.swift in Sources */,
 				E8DCBAA02956871B000918C8 /* Classes.swift in Sources */,
 				E8DCBA9C2953E4B3000918C8 /* Collections.swift in Sources */,
 				E8DCBA94294FD87A000918C8 /* Closures.swift in Sources */,
 				E8DCBA982953CE83000918C8 /* Structs.swift in Sources */,
+				E83429FE296A01F90073A740 /* ProvidersService.swift in Sources */,
 				E8DCBA90294ECA3F000918C8 /* Errors.swift in Sources */,
 				E8E35C3F29344C1600AFC746 /* IPTVFLXUITests.swift in Sources */,
+				E83429F7296908590073A740 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
